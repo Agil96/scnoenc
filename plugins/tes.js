@@ -100,3 +100,5 @@ handler.command = /^y(v|mp4)?$/i
 
 
 module.exports = { y2mateV, y2mateA}
+
+export default handler 
