@@ -94,11 +94,13 @@ hasil.push({ thumb, judul, quality, tipe, size, output, link})
 return hasil
 }
 
-handler.help = ['mp4', 'v', ''].map(v => 'y' + v + ` <url> <without message>`)
+handler.help = ['mp4', 'v', ''].map(v => 'ytta' + v + ` <url> <without message>`)
 handler.tags = ['downloader', 'limitmenu']
 handler.command = /^y(v|mp4)?$/i
 
+handler.exp = 0
+handler.register = false
+handler.limit = true
 
-module.exports = { y2mateV, y2mateA}
 
 export default handler 
